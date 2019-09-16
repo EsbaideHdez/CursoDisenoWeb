@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Git | Comandos</title>
+    <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Manjari', sans-serif;
+        }
+
+        .contenedor {
+            padding: 20px;
+            width: 75%;
+            margin: auto;
+        }
+
+        h1 {
+            position: relative;
+            display: table;
+            margin: 20px auto 50px auto;
+        }
+
+        h1:after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 50%;
+            height: 3px;
+            left: 25%;
+            margin-top: 10px;
+            background: tomato;
+        }
+
+        h2 {
+            margin: 20px 0;
+        }
+
+        h3 {
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        p {
+            color: #fff;
+            line-height: 25px;
+        }
+
+        .fila {
+            border-radius: 3px;
+            display: inline-block;
+            margin-bottom: 20px;
+            background: #01c3ca;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+            /* border-bottom:5px solid #00f7ff; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1>Comandos Git</h1>
+        <h2>Configuración</h2>
+
+        <div class="fila">
+            <strong>
+                <h3>git --version</h3>
+            </strong>
+            <p>Muestra la versión instalada de Git</p>
+        </div>
+        <div class="fila">
+            <strong>
+                <h3>git config --global user.name "nombreDeUsuario"</h3>
+            </strong>
+            <p>Configura el nombre de usuario de manera global, es decir, para todos los proyectos</p>
+        </div>
+        <div class="fila">
+            <strong>
+                <h3>git config user.name</h3>
+            </strong>
+            <p>Muestra el nombreDeUsuario ya asignado</p>
+        </div>
+        <div class="fila">
+            <strong>
+                <h3>whoami</h3>
+            </strong>
+            <p>Al igual que el comando git config user.name, muestra el nombreDeUsuario</p>
+        </div>
+        <div class="fila">
+            <strong>
+                <h3>git config --global user.email "correoElectrónico"</h3>
+            </strong>
+            <p>Configura el correo electrónico del usuario de manera global, es decir, para todos los proyectos</p>
+        </div>
+        <div class="fila">
+            <strong>
+                <h3>git config user.email</h3>
+            </strong>
+            <p>Muestra el correo electrónico del usuario</p>
+        </div>
+        <div class="fila">
+            <strong>
+                <h3>git config --global color.ui true</h3>
+            </strong>
+            <p>Muestra los comandos con colores</p>
+        </div>
+
+        <h2>Repositorios</h2>
+        <p style="color:#000;margin-bottom:10px;">Existen dos maneras de crear un repositorio. La primera es desde un
+            path de tu computadora (local) y la segunda
+            importa el repositorio ya existente que se aloja en internet (remoto)</p>
+        <div class="fila">
+            <strong>
+                <h3>git init</h3>
+            </strong>
+            <p>Inicializa un repositorio en un directorio existente. <em>Local</em></p>
+            <p>Los archivos estarán sin seguimiento (untracked). Por lo que habrá que usar el comando git add</p>
+        </div>
+        <div class="fila">
+            <strong>
+                <h3>git clone [url]</h3>
+            </strong>
+            <p>Clona/importa un repositorio existente en otro servidor. <em>Remoto</em></p>
+            <p>Los archivos estarán bajo seguimiento (tracked) hasta que se haga alguna modificación o se agregue un
+                nuevo archivo</p>
+        </div>
+        <div class="fila">
+            <strong>
+                <h3>git status</h3>
+            </strong>
+            <p>Te permite ver el estado actual del repositorio</p>
+        </div>
+        <div class="fila">
+            <strong>
+                <h3>git add [archivo/directorio]</h3>
+            </strong>
+            <p>Inicializa el seguimiento (tracked) del archivo/directorio especificado.</p>
+            <p>Agrega el archivo/directorio al <strong>staging index</strong>, que es la fase anterior para crear una
+                nueva versión. Para crear la versión hace falta confirmación con <em>git commit</em></p>
+        </div>
+    </div>
+</body>
+
+</html>
