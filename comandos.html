@@ -147,6 +147,38 @@
             <p>Agrega el archivo/directorio al <strong>staging index</strong>, que es la fase anterior para crear una
                 nueva versión. Para crear la versión hace falta confirmación con <em>git commit</em></p>
         </div>
+        <div class="fila">
+            <strong>
+                <h3>git add .</h3>
+            </strong>
+            <p>Si se tienen varios archvios o directorios en el repositorio, para no tener que agregar archivo por
+                archivo se usa el punto y se agregarán todos los archvios y directorios al staging index</p>
+        </div>
+        <div class="fila">
+            <strong>
+                <h3>git rm --cached [archivo]</h3>
+            </strong>
+            <p>Elimina un archivo en seguimiento (tracked). Remueve el archivo del <em>staging index</em> </p>
+        </div>
+        <div class="fila">
+            <strong>
+                <h3>git commit -m "notaDeLaNuevaVersión"</h3>
+            </strong>
+            <p>Confirma los cambios agregados con git add y crea una nueva versión en el repositorio</p>
+        </div>
+        <div class="fila">
+            <strong>
+                <h3>git push</h3>
+            </strong>
+            <p>Envía los cambios al repositorio remoto (internet)</p>
+        </div>
+        <div class="fila">
+            <strong>
+                <h3>git remote</h3>
+            </strong>
+            <p>Te permite ver cuáles son los repositorios remotos vinculados. Si se clonó un repositorio remoto y no se
+                nombró, git por defecto lo nombra <em>Origin</em></p>
+        </div>
     </div>
 </body>
 
