@@ -114,7 +114,7 @@
             <p>Muestra los comandos con colores</p>
         </div>
 
-        <h2>Repositorios</h2>
+        <h2>Repositorios y commit</h2>
         <p style="color:#000;margin-bottom:10px;">Existen dos maneras de crear un repositorio. La primera es desde un
             path de tu computadora (local) y la segunda
             importa el repositorio ya existente que se aloja en internet (remoto)</p>
@@ -189,7 +189,9 @@
             <strong>
                 <h3>git log --stat</h3>
             </strong>
-            <p>Muestra los commit's que se han creado, más un resumen de las estadísticas (cambios hechos). Por ejemplo, cuántos y cuales archvios se modificaron, cuántas líneas de código se agregaron y cuántas se eliminaron</p>
+            <p>Muestra los commit's que se han creado, más un resumen de las estadísticas (cambios hechos). Por ejemplo,
+                cuántos y cuales archvios se modificaron, cuántas líneas de código se agregaron y cuántas se eliminaron
+            </p>
         </div>
         <div class="fila">
             <strong>
@@ -213,18 +215,36 @@
             <strong>
                 <h3>git diff</h3>
             </strong>
-            <p>Muestra la diferencia entre el commit pasado y el contendio modificado, es decir, muestra el código que se creó después del último commit en letras verdes</p>
+            <p>Muestra la diferencia entre el commit pasado y el contendio modificado, es decir, muestra el código que
+                se creó después del último commit en letras verdes</p>
         </div>
         <div class="fila">
             <strong>
                 <h3>git diff [identificador del commit] [archivo]</h3>
             </strong>
             <p>Ejemplo: git diff f3be550 index.html</p>
-            <p>Muestra las modificaciones de los commit's (versiones) especificadas. En letras verdes lo que se agregó y en letras rojas lo que se eliminó </p>
+            <p>Muestra las modificaciones de los commit's (versiones) especificadas. En letras verdes lo que se agregó y
+                en letras rojas lo que se eliminó </p>
         </div>
-
-        <div>
-            <h1>ESTE CÓDIGO LO AGREGUÉ PARA HACER PRUEBAS CON EL COMANDO: GIT CHECKOUT</h1>
+        <div class="fila">
+            <strong>
+                <h3>git checkout [identidicador del commit]</h3>
+            </strong>
+            <p>Ejemplo: git checkout f3be550</p>
+            <p>checkout se usa para varios casos. En el caso de los commit's, se usa para regresar en el tiempo de un
+                commit (versión) a otra. Se debe tener mucho cuidado porque si se regresa a un commit anterior, todos
+                los que se hayan creado después desaparecerán</p>
+        </div>
+        <!-- Ramas -->
+        <h2>Ramas (Branches)</h2>
+        <div class="fila">
+            <strong>
+                <h3>git checkout [identidicador del commit]</h3>
+            </strong>
+            <p>Ejemplo: git checkout f3be550</p>
+            <p>checkout se usa para varios casos. En el caso de los commit's, se usa para regresar en el tiempo de un
+                commit (versión) a otra. Se debe tener mucho cuidado porque si se regresa a un commit anterior, todos
+                los que se hayan creado después desaparecerán</p>
         </div>
     </div>
 </body>
