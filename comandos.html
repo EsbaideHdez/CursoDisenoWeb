@@ -234,17 +234,40 @@
             <p>checkout se usa para varios casos. En el caso de los commit's, se usa para regresar en el tiempo de un
                 commit (versión) a otra. Se debe tener mucho cuidado porque si se regresa a un commit anterior, todos
                 los que se hayan creado después desaparecerán</p>
+            <br>
+            <p><strong><em>NOTA: Al hacer un checkout y regresar a un commit del pasado, se crea una rama por default
+                        (HEAD) y al poner git branch apunta a esa rama. *Si queremos regresar al estado anterior de
+                        regresar a un commit del pasado, hay que hacer un checkout master para regresar a la rama
+                        principal y la rama head desaparecerá*. Si en realidad si se desea regresar al commit del pasado
+                        y perder los commit futuros a ese, hay que hacer un merge para pasar los cambios de la rama head
+                        a master </em></strong></p>
         </div>
         <!-- Ramas -->
         <h2>Ramas (Branches)</h2>
+        <p style="color:#000; margin-bottom:10px;">Una rama es una versión del código principal. Su función es crear una copia del código sin afectar al código original (en la rama master) y si los cambios o la adición de nuevo código se quiere agregar al código principal (master) se hace un merge. Algo interesante es que se pueden crear archivos en las nuevas ramas y no se crean en la rama master</p>
         <div class="fila">
             <strong>
-                <h3>git checkout [identidicador del commit]</h3>
+                <h3>git branch [nombre de la rama]</h3>
             </strong>
-            <p>Ejemplo: git checkout f3be550</p>
-            <p>checkout se usa para varios casos. En el caso de los commit's, se usa para regresar en el tiempo de un
-                commit (versión) a otra. Se debe tener mucho cuidado porque si se regresa a un commit anterior, todos
-                los que se hayan creado después desaparecerán</p>
+            <p>Crea una nueva rama</p>
+        </div>
+        <div class="fila">
+            <strong>
+                <h3>git checkout [nombre de la rama]</h3>
+            </strong>
+            <p>Cambia de rama sin afectar la rama en la que se estaba antes</p>
+        </div>
+        <div class="fila">
+            <strong>
+                <h3>git checkout -b [nombre de la rama]</h3>
+            </strong>
+            <p>Es un atajo de los dos ejemplos anteriores. Crea una nueva rama y se cambia a dicha rama</p>
+        </div>
+        <div class="fila">
+            <strong>
+                <h3>git branch</h3>
+            </strong>
+            <p>Muestra las ramas creadas y en cual de estas se está</p>
         </div>
     </div>
 </body>
