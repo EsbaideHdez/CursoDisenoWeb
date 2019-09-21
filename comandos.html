@@ -179,9 +179,16 @@
         </div>
         <div class="fila">
             <strong>
-                <h3>git push</h3>
+                <h3>git push [remoto][rama]</h3>
             </strong>
             <p>Envía los cambios al repositorio remoto (internet)</p>
+        </div>
+        <div class="fila">
+            <strong>
+                <h3>git pull [identificador del repositorio remoto] [rama a la que se importarán los cambios]</h3>
+            </strong>
+            <p>Ejemplo: git pull Origin master</p>
+            <p>Si se hicieron modificaciones en el repositorio remoto, se usa este comando para importar los cambios al repositorio local</p>
         </div>
         <div class="fila">
             <strong>
@@ -299,11 +306,25 @@
             <p>Actualiza los cambios de otras ramas a la rama master. Este comando se hace desde la rama master</p>
         </div>
         <!-- Subiendo Repositorio -->
-        <h2>Subiendo repositorio a Github</h2>
+        <h2>Subiendo repositorio a Github desde un repositorio local previamente creado</h2>
         <p style="color:#000;">Si se creó un repositorio local con <em>git init</em> y se quiere subir a un repositorio remoto, hay que ir a Github y crear un nuevo repositorio. Al crearlo hay que usar este comando en Git Bash en el path del repositorio local: </p>
         <p style="color:#000; margin-bottom:10px;"><strong>Nota: Es el primer comando: git remote add ...<br> <em>Origin</em> es el nombre por defeto, pero se puede cambiar de nombre. Este nombre es con el que se identifica al repositorio</strong></p>
         <img src="remote.png" width="100%" alt="">
-
+        <div class="fila">
+            <strong>
+                <h3>git remote add [identificador del repositorio remoto] [URL del repositorio remoto]</h3>
+            </strong>
+            <p>Ejemplo: git remote add DisenoWeb https://github.com/renebarrera1022/CursoDisenoWeb.git</p>
+            <p>Este comando se usa desde un repositorio local ya creado, lo que hace es vincular el repositorio local con el remoto</p>
+        </div>
+        <div class="fila">
+            <strong>
+                <h3>git push -u [identificador del repositorio remoto] [nombre de la rama desde donde se subirá]</h3>
+            </strong>
+            <em><p>-u: guarda (remoto)(rama), por lo que la siguiente vez que desee subir cambios solo hay que poner: git push</p></em>
+            <p>Ejemplo: git push -u DisenoWeb master</p>
+            <p>Sube los archivos de la rama especificada al repositorio remoto especificado</p>
+        </div>
     </div>
 </body>
 
