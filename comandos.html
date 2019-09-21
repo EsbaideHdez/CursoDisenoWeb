@@ -15,7 +15,6 @@
 
         body {
             font-family: 'Manjari', sans-serif;
-            background: linear-gradient(to right, #fff, pink);
         }
 
         .contenedor {
@@ -70,8 +69,19 @@
 <body>
     <div class="contenedor">
         <h1>Comandos Git</h1>
+        <div class="fila">
+            <strong>
+                <h3>history</h3>
+            </strong>
+            <p>Muestra el historial de comandos</p>
+        </div>
+        <div class="fila">
+            <strong>
+                <h3>clear</h3>
+            </strong>
+            <p>Limpia la pantalla de la consola</p>
+        </div>
         <h2>Configuración</h2>
-
         <div class="fila">
             <strong>
                 <h3>git --version</h3>
@@ -182,6 +192,12 @@
         </div>
         <div class="fila">
             <strong>
+                <h3>git remote -v</h3>
+            </strong>
+            <p>Muestra el nombre del repositorio y su dirección URL</p>
+        </div>
+        <div class="fila">
+            <strong>
                 <h3>git log</h3>
             </strong>
             <p>Muestra los commit's que se han creado</p>
@@ -270,6 +286,24 @@
             </strong>
             <p>Muestra las ramas creadas y en cual de estas se está</p>
         </div>
+        <div class="fila">
+            <strong>
+                <h3>git branch -d [nombre de la rama]</h3>
+            </strong>
+            <p>Elimina la rama especificada. Para poder eliminar la rama no se debe estar situado en ella, se borra desde otra rama</p>
+        </div>
+        <div class="fila">
+            <strong>
+                <h3>git merge [nombre de la rama]</h3>
+            </strong>
+            <p>Actualiza los cambios de otras ramas a la rama master. Este comando se hace desde la rama master</p>
+        </div>
+        <!-- Subiendo Repositorio -->
+        <h2>Subiendo repositorio a Github</h2>
+        <p style="color:#000;">Si se creó un repositorio local con <em>git init</em> y se quiere subir a un repositorio remoto, hay que ir a Github y crear un nuevo repositorio. Al crearlo hay que usar este comando en Git Bash en el path del repositorio local: </p>
+        <p style="color:#000; margin-bottom:10px;"><strong>Nota: Es el primer comando: git remote add ...<br> <em>Origin</em> es el nombre por defeto, pero se puede cambiar de nombre. Este nombre es con el que se identifica al repositorio</strong></p>
+        <img src="remote.png" width="100%" alt="">
+
     </div>
 </body>
 
